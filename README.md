@@ -1,9 +1,20 @@
+Description
+===========
+
+Run robot tests every 5min inside docker with phantomjs
+
 
 Build & Run
 ===========
 
     docker build -t my/tests .
     docker run --rm -p 5000:5000 -v `pwd`/extra:/tests/extra -it my/tests:latest
+
+
+Example
+=======
+
+    ./sites/blog.matejc.com/basic.robot
 
 
 Links
